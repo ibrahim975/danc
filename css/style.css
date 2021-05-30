@@ -1,0 +1,771 @@
+/*google font link*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/*other google font */
+	@font-face{
+	font-family: 'heavyweight';
+	src: url('heavyweight.TTF');
+}
+/*global css*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+h1,h2,h3{
+	text-transform: capitalize;
+}
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+ul li{
+	list-style: none;
+}
+
+input,
+textarea,
+button:focus{
+	outline: none;
+}
+input,textarea{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/*========
+header css
+=========*/
+
+header{
+	background: #6d2b70;
+}
+.logo-img{
+	padding: 20px 0;
+}
+nav{
+	margin-top: 32px;
+}
+nav ul li{
+	list-style: none;
+	display: inline;
+	margin: 0 5px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 40px 10px 20px;
+	font-size:15px;
+	font-weight: 600;
+}
+nav ul li a.active{
+	background: #ffd600;
+	color: #6d2b70;
+	border-radius: 0 0 15px 15px;
+}
+
+/*========
+banner css
+==========*/
+.banner-section{
+	padding: 20px 0;
+	background: #933798;
+}
+.banner-section h1{
+	color: #fff;
+	font-family: 'heavyweight';
+	font-size: 110px;
+	line-height: 100px;
+	margin-top: 100px;
+	letter-spacing: 5px;
+}
+.banner-section h1 span{
+	display: block;
+	font-family: 'heavyweight';
+	color: #ffd600;
+}
+.banner-section p{
+	color: #fff;
+	font-weight: 500;
+	font-size: 21px;
+	padding-left: 10px;
+}
+.banner-section .btn{
+	position: relative;
+	background:  #ffd600;
+	padding: 8px 20px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 25px;
+	border: none;
+	color: #340d35;
+	overflow: hidden;
+
+}
+.banner-section .btn::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background: #6d2b70;
+	border-radius: 25px;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+.banner-section .btn:hover::before{
+	left: 0;
+	opacity: 1;
+	z-index: -1;
+}
+.banner-section .btn:hover{
+	color: #fff;
+	z-index: 1;
+}
+
+
+/*========
+about css
+==========*/
+.about-section{
+	padding: 100px 0;
+	position: relative;
+}
+.about-section h1{
+	text-align: center;
+	font-size: 45px;
+	font-weight: 600;
+}
+.about-section p{
+	text-align: center;
+	padding: 10px 273px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #340d35;
+}
+.about-paragraph p{
+	padding: 0 55px 0 0;
+	text-align: left;
+	line-height: 23px;
+	font-size: 18px;
+	color: #340d35;
+}
+.about-paragraph{
+	margin-top: 72px;
+}
+.section-img-1{
+	width: 700px;
+	position: absolute;
+	top: 250px;
+	right: 0;
+	z-index: -1;
+}
+.about-section::before{
+	content: '';
+	position: absolute;
+	width: 45%;
+	height: 50%;
+	background: #ffe9ff;
+	border-radius: 0 12px 12px 0;
+	top: 40%;
+	left: 0;
+	z-index: -1;
+}
+
+/*========
+service css
+==========*/
+.service-section{
+	padding: 60px 0;
+}
+.service-section h1{
+	text-align: center;
+	font-size: 45px;
+	font-weight: 600;
+}
+.service-section p{
+	text-align: center;
+	padding: 10px 273px;
+	font-size: 18px;
+	line-height:21px;
+	color: #340d35;
+}
+.service-block{
+	display: flex;
+}
+ .service-item{
+ 	background: #ffe9ff;
+ 	padding: 20px;
+ 	margin: 10px;
+ 	text-align: center;
+}
+.service-item h2{
+	padding: 5px 0;
+}
+.service-item p{
+	padding: 5px 20px 0;
+}
+
+
+/*========
+danc-section css
+==========*/
+.danc-section{
+	padding: 80px 0;
+	background: url("img/background-img-1.png") no-repeat center top;
+	background-size: cover;
+}
+.danc-section h1{
+	text-align: center;
+	font-size: 45px;
+	font-weight: 500;
+	color: #fff;
+}
+.danc-section p{
+	text-align: center;
+	padding: 8px 270px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #fff;
+}
+.danc-section .col-12{
+	margin-top: 17px;
+}
+.danc-btn-grupe{
+	text-align: center;
+}
+.danc-btn-grupe ul li{
+	display: inline;
+	margin: 0 10px;
+}
+.danc-btn-grupe ul li button{
+	padding: 8px 20px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 25px;
+	border: 1px solid #fff;
+	overflow: hidden;
+}
+.btn-watch{
+	color: #b45ebb;
+	background: #fff;
+}
+.btn-dwonload{
+	position: relative;
+	background: transparent;
+	color: #fff;
+}
+.btn-dwonload::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background: #fff;
+	border-radius: 25px;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+.btn-dwonload:hover::before{
+	opacity: 1;
+	left: 0;
+	z-index: -1;
+}
+.btn-dwonload:hover{
+	color: #b45ebb;
+	z-index: 1;
+}
+
+/*========
+work css
+==========*/
+.work-section{
+	padding: 100px 0;
+	position: relative;
+}
+.work-section h1{
+	text-align: center;
+	font-size: 45px;
+	font-weight: 500;
+}
+.work-section p{
+	text-align: center;
+	padding: 10px 270px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #340d35;
+}
+.section-img-3{
+	position: absolute;
+	left: 0;
+	top: 150px;
+	z-index: -1;
+	margin-left: -30px;
+}
+.work-paragraph{
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.work-paragraph p{
+	padding: 0 10px;
+	text-align: left;
+}
+.work-section::before{
+	content: '';
+	position: absolute;
+	width: 47%;
+	height: 58%;
+	background: #ffe9ff;
+	border-radius: 12px 0 0 12px;
+	top: 32%;
+	right: 0;
+	z-index: -1;
+}
+.work-btn{
+	text-align: center;
+}
+.work-btn-section button{
+	padding: 7px 30px;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 25px;
+	background: #933798;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+}
+
+/*==================
+Pricing section css
+===================*/
+.Pricing-Plans{
+	padding: 100px 0;
+	position: relative;
+	z-index: 1;
+}
+.Pricing-Plans h1{
+	color: #202328;
+	text-align: center;
+	font-size: 42px;
+	font-weight: 400;
+}
+.Pricing-Plans p{
+	text-align: center;
+	padding: 15px 270px;
+	font-size: 18px;
+}
+.Pricing-block{
+	display: flex;
+}
+.Pricing-item{
+	margin: 10px;
+	background: #d9d9d9;
+}
+.Pricing-item h2{
+	text-align: center;
+	padding: 10px 0;
+	background: #933798;
+	color: #fff;
+	font-weight: 500;
+	font-size: 22px;
+}
+.Pricing-item h3{
+	text-align: center;
+	color: #933798;
+	padding: 0 0 10px;
+}
+.Pricing-item p{
+	padding: 10px 10px 15px;
+	line-height: 20px;
+	font-size: 16px;
+}
+.Pricing-item-list p{
+	padding: 0;
+}
+.pricing-btn{
+	padding: 8px 25px;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 25px;
+	border: none;
+	margin: 30px auto;
+	display: block;
+	color: #fff;
+	background: #933798; 
+	font-size: 14px;
+}
+
+
+/*==================
+Blog section css
+===================*/
+.Blog-section{
+	padding: 0;
+	position: relative;
+	z-index: 1;
+}
+.Blog-section h1{
+	color: #202328;
+	text-align: center;
+	font-size: 42px;
+	font-weight: 400;
+}
+.Blog-section p{
+	text-align: center;
+	padding: 15px 270px;
+	font-size: 18px;
+}
+.Blog-box{
+	display: flex;
+}
+.Blog-item{
+	position: relative;
+	margin: 10px;
+}
+.Blog-item h2{
+	position: absolute;
+	font-size: 21px;
+	color: #fff;
+	bottom: 10px;
+	padding: 0 20px;
+}
+.blog-btn button{
+	padding: 8px 25px;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 25px;
+	border: none;
+	margin: 30px auto;
+	display: block;
+	color: #fff;
+	background: #933798; 
+	font-size: 14px;
+}
+/*==================
+Get Touch section css
+===================*/
+.Get-Touch-section{
+	padding: 50px 0;
+	position: relative;
+	z-index: 1;
+}
+.Get-Touch-section h1{
+	color: #202328;
+	text-align: center;
+	font-size: 42px;
+	font-weight: 400;
+}
+.Get-Touch-section p{
+	text-align: center;
+	padding: 15px 270px;
+	font-size: 18px;
+}
+.Get-Touch-box{
+	display: flex;
+}
+.Get-Touch-item{
+	text-align: center;
+	border: 1px solid #3e103e;
+	margin: 0 10px;
+	padding: 25px 10px;
+}
+.Get-Touch-item .fas,.far{
+	font-size: 40px;
+	margin: 5px 0 10px;
+	color: #3e103e;
+}
+.Get-Touch-item h2{
+	font-weight: 400;
+	font-size: 28px;
+	padding: 10px 0;
+}
+.Get-Touch-item p{
+	padding: 0 20px;
+	line-height: 20px;
+	color: #3e103e;
+}
+
+/*==================
+contact section css
+===================*/
+.contact-section{
+	background: #cccccc;
+	padding: 50px 0;
+}
+.form-content .form-group{
+	margin: 20px 0;
+}
+.form-content .form-control{
+	border: 1px solid #966981;
+	background: #edbdec;
+	color: black;
+}
+.form-content .form-group .btn{
+	padding: 8px 25px;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 25px;
+	border: none;
+	color: #fff;
+	background: #933798; 
+	font-size: 14px;
+}
+.contact-section iframe{
+	width: 100%;
+	height: 350px
+}
+/*==================
+contact section css
+===================*/
+.footer-section{
+	text-align: center;
+	padding: 60px 0;
+	background: #49134c;
+}
+.footer-section img{
+	margin: 10px 0;
+}
+.footer-section p{
+	color: #c0c0c0;
+	padding:0 300px;
+}
+.social-icon ul li{
+	display: inline;
+	margin: 0 10px;
+}
+.social-icon{
+	padding-top: 10px;
+}
+.social-icon .bg{
+	font-size: 30px;
+	background: #ffd600;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #000;
+}
+.footer-end{
+	background: #340d35;
+}
+.footer-end p{
+	text-align: center;
+	padding: 20px 0 5px;
+	font-size: 18px;
+	color: #c0c0c0;
+}
+
+
+/*media query css here*/
+@media only screen and (max-width: 570px){
+	.container{
+		width: 100%;
+	}
+	.col-6{
+		width: 100%;
+	}
+	.logo-img{
+		display: block;
+		margin: 0 auto;
+	}
+	nav{
+		display: none;
+	}
+	.banner-section h1 {
+	    font-size: 60px;
+	    line-height: 60px;
+	    margin-top: 50px;
+	    text-align: center;
+	}
+    .banner-section p {
+    	text-align: center;
+	}
+	.banner-section .btn {
+	    margin: 0 auto;
+	    display: block;
+	}
+	.banner-img{
+		margin: 30px auto;
+		display: block;
+		width: 90%;
+	}
+	.about-section h1 {
+    	font-size: 45px;
+	}
+	.about-section p {
+	    padding: 20px 0;
+	    font-size: 18px;
+	}
+	.section-img-1 {
+	    width: 700px;
+	    position: relative;
+	    top: 250px;
+	    right: 0;
+	    z-index: -1;
+	}
+	.about-paragraph {
+   	 	margin-top: 30px;
+	}
+	.about-paragraph p {
+	    text-align: center;
+	    line-height: 20px;
+	}
+	.about-section p {
+   	 padding: 5px 0;
+	}
+	.about-section::before {
+	    width: 100%;
+	    height: 38%;
+	    border-radius: 0;
+	    top: 29%;
+	}
+	.section-img-1 {
+	    width: 100%;
+	    position: relative;
+	    top: 18px;
+	}
+	.service-section {
+	    padding: 0;
+	}
+	.service-section p {
+	    padding: 0;
+	    font-size: 18px;
+	}
+	.service-block {
+	    display: flex;
+	    flex-direction: column;
+	}
+	.service-item {
+	    padding: 10px;
+	    margin: 5px 0;
+	}
+	.danc-section {
+	    padding: 10px 0;
+	    margin: 10px 0;
+	}
+	.danc-section h1 {
+    	font-size: 37px;
+	}
+	.danc-section p {
+	    padding: 10px;
+	}
+	.work-section {
+	    padding: 20px 0;
+	}
+	.work-section p {
+	      padding: 10px;
+	}
+	.section-img-3 {
+	    position: relative;
+	    top: 0px;
+	 	width: 100%;
+	 	margin-left: -10px;
+	}
+	.work-paragraph {
+	    margin-left: 0;
+	}
+	.work-paragraph p{
+		padding: 0px;
+		text-align: center;
+	}
+	.work-section::before {
+	   	width: 100%;
+	    height: 50%;
+	    border-radius: 0;
+	    top: 49%;
+	}
+	.work-btn-section button {
+	    margin: 10px auto;
+	}
+	.Pricing-Plans {
+	    padding: 50px 0 0;
+	    position: relative;
+	    z-index: 1;
+	}
+	.Pricing-Plans p {
+	    padding: 10px;
+	    line-height: 20px;
+	}
+	.Pricing-block {
+	    display: flex;
+	    flex-direction: column;
+	}
+	.Pricing-item {
+	    margin: 10px 0;
+	}
+	.Pricing-item h3 {
+	    padding: 0;
+	}
+	.Pricing-item-list p {
+		padding: 0;
+		margin: 5px 0;
+	}
+	.Blog-section {
+	    padding: 50px 0 0;
+	}
+	.Blog-section p {
+	 	padding: 10px;
+	}
+	.Blog-box {
+	    display: flex;
+	    flex-direction: column;
+	}
+	.Blog-item {
+	    position: relative;
+	    margin: 5px 0;
+	}
+	.Get-Touch-section {
+	    padding: 20px 0;
+	}
+	.Get-Touch-section p {
+    	 padding:10px;
+	}
+	.Get-Touch-box {
+	    display: flex;
+	    flex-direction: column;
+	}
+	.Get-Touch-item {
+	    margin: 10px auto;
+	    padding: 10px 5px;
+	}
+	.Get-Touch-item h2 {
+	    padding: 0;
+	}
+	.form-content .form-group .btn {
+	    margin: 0 auto;
+	    display: block;
+	}
+	.contact-section iframe {
+	    height: 250px;
+	}
+	.footer-section {
+	   padding: 10px 0;
+	}
+	.footer-section .logo-img {
+	    display: block;
+	    margin: 0 auto;
+	}
+	.footer-section p {
+	    color: #c0c0c0;
+	    padding: 10px;
+	}
+	.footer-section ul {
+	    padding-left: 0rem;
+	}
+		.social-icon .bg {
+	    font-size: 25px;
+	    width: 40px;
+	    height: 40px;
+	    line-height: 40px;
+	}
+	.footer-end p {
+	   font-size: 14px;
+	}
+		
+}
